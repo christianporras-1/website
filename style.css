@@ -2,19 +2,27 @@ body {
     font-family: sans-serif;
     margin: 0; 
 }
-
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-}
-
 h1 {
     margin-bottom: 5px; 
 }
-
+#aboutHeader {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+}
 #about {
+    text-align: left;
     padding: 20px;
+}
+
+#projects {
+    text-align: left;
+    padding: 20px;
+}
+
+
+#photo {
+    padding-top: 100px;
 }
 
 .profile-pic {
@@ -25,8 +33,12 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-
+#resume button{
+    text-align:center;
+    padding:5px
+}
 #resume {
+    text-align: left;
     padding: 20px;
 }
 
@@ -35,8 +47,8 @@ h1 {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #f0f0f0;
+    color: black;
     text-align: center;
     padding: 10px;
 }
@@ -46,10 +58,168 @@ footer {
     margin: 0 10px;
 
     a {
-        color: white;
+        color: black;
     }
     
     :visited {
-        color: white;
+        color: black;
     }
+}
+
+.profile-pic {
+    width: 300px;
+    height: auto;
+    border: 10px solid #111111;
+    border-radius: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Bigger sub section styling*/
+.sub-title {
+    color: black;
+    margin-top: 30px;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+header {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+header.sticky{
+    padding: 5px 40px;
+    background: #000;
+}
+
+header.sticky .title,
+header.sticky ul li a{
+    color: #fff;
+}
+header .title {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        padding: 5px 40px;
+    }
+
+    header ul {
+        flex-direction: row; /* Arrange items in a row */
+        flex-wrap: wrap;     /* Allow wrapping if needed */
+        justify-content: center; /* Center the items */
+        margin-top: 10px;
+    }
+
+    header ul li {
+        margin: 5px;  /* Adjust margin as needed */
+        line-height: 1.2;
+    }
+
+    header .title {
+        display: none;
+    }
+}
+
+/* Buttons for project links and CV download*/
+.btn{
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 20px 20px;
+    border-radius: 5000px;
+    transition: 0.3s;
+    position: relative;
+    justify-content: center;
+}
+
+.btn:hover{
+    transform: scale(1.15);
+}
+.btn-box{
+    background-color: black;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5000px;
+    transition: 0.3s;
+}
+.btn-box:hover{
+    transform: scale(1.15);
+}
+.btn--download{
+    padding: 12px 24px;
+    font-size: 16px;
+    position: relative;
+    bottom: 27px;
+    left: calc(50% - 120px);
+    z-index: 100;
+    box-shadow: 0 6px 23px rgba(0, 0, 0, 0.45);
+    animation: fade-up 0.5s 0.4s backwards;
+}
+
+.btn--box{
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    z-index: 50;
+    animation: fade-up 0.5s 0.4s backwards;
+}
+
+a {
+    text-decoration: none;
 }

@@ -8,45 +8,101 @@
 </head>
 <body>
     <header>
-        <h1>Christian Porras</h1>
-        <h2>Mechanical Design Engineer</h2>
+        <a href="#" class="title">Christian Porras</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Experience</a></li>
+        </ul>
     </header>
 
+    <section id="photo">
+        <img src="assets/photo.png" alt="photo of myself" class="profile-pic">
+    </section>
+
+    <section id="aboutHeader">
+        <h3><span style="color: cornflowerblue;">About Me</span></h3>
+    </section>
+
     <section id="about">
-        <h3>About Me</h3>
-        <p>Software engineer on Google Cloud's accessibility team. I love building inclusive technology and empowering others to reach their full potential.</p> 
-        <img src="photo.png" alt="photo of myself" class="profile-pic">
+        <p>Hello, my name is Christian, and I'm a Mechanical Engineering student at the University of Texas at El Paso. I believe that mechanical design can be a powerful tool for innovation. I am driven to tackle complex engineering challenges with the goal of making a lasting, positive difference in the world. I've always been fascinated by how things work, and I'm motivated by the idea that through thoughtful design, we can solve some of the world's most pressing problems.</p>
         <br>
-        <span>Here is a link to view my <a href="resume.pdf">resume</a>.</span>
+    </section>
+
+    <!--Button to download resume-->
+    <a href="assets/resume.pdf" class="btn btn--download">Download <span class = "u-bolder">Resume</span></a>
+
+    <section id="projects">
+        <h3><span style="color: cornflowerblue;">Projects</span></h3>
+        <div class="job">
+            <h4>Battle bot</h4>
+            <img src="assets/robot.png" width="350" height="300"> <img src="assets/robot_hardware.jpg" Width="350" Height="300"> <img src="assets/final_robot.jpg" Width="350" Height="300">
+            <p>In an interdisciplinary team, I led the mechanical design and fabrication of a Sumo robot chassis, engineered to withstand competitive impacts while securely housing critical components. My primary responsibility was to design the main chassis to protect all internal hardware, including the motors, power supply, and custom printed circuit board (PCB).
+
+                A key technical challenge was developing a robust mounting solution for the PCB. I designed a system that used a custom bracket and mounting points to ensure the board remained completely stable and secure under heavy impact, preventing any component wiggle or disconnection. The chassis was successfully 3D printed using PLA+, and it performed effectively throughout the competition. While the chassis provided excellent protection, post-competition analysis revealed material limitations. Future iterations would utilize a more resilient material like PETG or a different manufacturing process such as CNC machining to enhance structural integrity and durability. </p>
+        </div>
+
     </section>
 
     <section id="resume">
-        <h3>Experience</h3>
+        <h3><span style="color: cornflowerblue;">Education</span></h3>
+        <p><Strong>The University of Texas at El Paso</Strong></p>
+        <p> B.S. Mechanical Engineering | Expected Graduation: Dec 2026</p>
+        <ul>
+            <li> Relevant course work: Dynamics, Electromechanical systems, Engineering computations, Thermodynamics, Fluid Mechanics, Mechanical Design, System Dynamics, Mechanics of Materials, Materials and manufacturing processes, Statics, Intro to Thermal Fluid Science, Graphic and Design</li>
+        </ul>
+        <p><Strong>The University of Texas at El Paso</Strong></p>
+        <p> B.A. Criminal Justice | Expected Graduation: Dec 2026</p>
+        <ul>
+            <li> Relevant course work: Intro to Criminal Justice, Cyber crime, Criminology, Applied research methods in CJ, Organized crime, White collar crime, Homicide, Criminal Procedure, Crime control and prevention, Police systems and Practices.</li>
+        </ul>
+
+        <p><Strong>Technical Skills:</Strong> Siemens NX, Ntop, 3D scanning, Computational fluid dynamics, Failure analysis, Root cause analysis,
+            Cross sectional analysis, Design for manufacturability, 3D printing, Additive manufacturing, Python, LaTex, MatLab,
+            Solid works, Fusion 360, Materialize Magics, CNC machine, Surface finishing, Prototyping</p>
+        <h3><span style="color: cornflowerblue;">Experience</span></h3>
         <div class="job">
-            <h4>Mechanical Design Engineer</h4>
-            <p>Google (2020-Present)</p>
+            <h4>Apple</h4>
+            <p>Laser and Metal Additive Intern | Feb 2025 - Aug 2025 </p>
             <ul>
-                <li>Built accessible features for Google Cloud</li>
-                <li>Mentored junior engineers</li>
+                <li>Engineered test geometries in Siemens NX and Ntop to benchmark binder jetting and LPBF performance,
+                    enabling early calibration and reducing setup iterations by 15%.</li>
+                <li>Designed a new LPBF support structure system using Siemens NX reducing post processing times by 75%.</li>
+                <li>Led root cause and failure analysis for structurally weak binder jet parts improving print reliability by 30%.</li>
+                <li>Spearheaded foundational parameter development for dissimilar metal welding and LPBFcreating a reuseable
+                    process baseline that cut experimental trial runs by 20%.</li>
             </ul>
         </div>
         <div class="job">
-            <h4>...More experience...</h4>
+            <h4>W.M. Keck Center for 3D Innovation</h4>
+            <p>Undergraduate Research Assistant | Jan 2024 - Feb 2025 </p>
+            <ul>
+                <li>Assist in research for developing new methods to increase efficiency by 10% in the processes of additive
+                    manufacturing.</li>
+                <li>Optomize and maintain 50+ materials, 7+ LPBF 3D printers, 10 + FDM 3D printers, and necessary equipment
+                    for additive manufacturing.</li>
+                <li>Increase production by 15% by maintaining crucial lab equipment like PPE and gases necessary for additive
+                    manufacturing.</li>
+            </ul>
         </div>
-        
-        <h3>Projects</h3>
-         <div class="job">
-            <h4>...More projects...</h4>
+        <div class="job">
+            <h4>El Paso International Airport</h4>
+            <p>Ramp Lead | Jan 2022 - Dec 2022 </p>
+            <ul>
+                <li>Lead teams of 5+ staff to maintain a steady work flow in order to meet departure times of aircraft.</li>
+                <li>Coordinate teams of 10+ to maintain a safe work place and ensure PPE is provided to all staff.</li>
+                <li>Trained new staff on how to work around heavy machinery in a safe manner</li>
+            </ul>
         </div>
+
     </section>
 
     <footer>
         <p>&copy; 2025 Christian Porras</p>
         <ul class="social-links">
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li> 
+            <li><a href="#https://www.linkedin.com/in/christian-porras1/">LinkedIn</a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
