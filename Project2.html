@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="#" class="title">Christian Porras</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Experience</a></li>
+    </ul>
+</header>
+
+<section id="spacer">
+    <p>As the Aerodynamic Lead for a four-person team, I was responsible for the design and manufacturing of a competition dragster, focusing on minimizing aerodynamic drag while generating critical downforce to ensure track stability. I employed Autodesk Fusion 360 and CFD to rapidly iterate and analyze multiple body geometries, ultimately selecting a design that balanced conflicting requirements. The primary engineering challenge was optimizing the lift-to-drag ratio—specifically achieving sufficient negative lift (downforce) to prevent liftoff without significantly increasing overall mass or drag. The final design secured a 7th-place finish in the engineering design competition. Future iterations would focus on materials engineering to achieve a more lightweight chassis, further maximizing acceleration potential.</p>
+    <br>
+</section>
+
+<!--Button to download resume-->
+<!--<a href="assets/resume.pdf" class="btn btn--download">Download <span class = "u-bolder">Resume</span></a>-->
+
+<section id="projects">
+    <h3><span style="color:cornflowerblue;">Dragster</span></h3>
+    <style>
+        .projects  {
+            display: grid; /* The key property for grid layout */
+            grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+            gap: 10px; /* Adds a gap between images */
+        }
+
+        .projects img {
+            width: 100%; /* Makes the image fill its grid cell */
+            height: 350px; /* Maintains the image aspect ratio */
+            border-radius:10px;
+        }
+    </style>
+    <div class="projects">
+        <img src="assets/Dragster CAD.png">
+        <img src="assets/CFD results.png">
+        <img src="assets/New dragster.png">
+
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

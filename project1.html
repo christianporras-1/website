@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="#" class="title">Christian Porras</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Experience</a></li>
+    </ul>
+</header>
+
+<section id="spacer">
+    <p>In an interdisciplinary team, I led the mechanical design and fabrication of a Sumo robot chassis, engineered to withstand competitive impacts while securely housing critical components. My primary responsibility was to design the main chassis to protect all internal hardware, including the motors, power supply, and custom printed circuit board (PCB).
+        A key technical challenge was developing a robust mounting solution for the PCB. I designed a system that used a custom bracket and mounting points to ensure the board remained completely stable and secure under heavy impact, preventing any component wiggle or disconnection. The chassis was successfully 3D printed using PLA+, and it performed effectively throughout the competition. While the chassis provided excellent protection, post-competition analysis revealed material limitations. Future iterations would utilize a more resilient material like PETG or a different manufacturing process such as CNC machining to enhance structural integrity and durability.
+    </p>
+    <br>
+</section>
+
+<!--Button to download resume-->
+<!--<a href="assets/resume.pdf" class="btn btn--download">Download <span class = "u-bolder">Resume</span></a>-->
+
+<section id="projects">
+    <h3><span style="color:cornflowerblue;">Battle bot</span></h3>
+    <style>
+        .projects  {
+            display: grid; /* The key property for grid layout */
+            grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+            gap: 10px; /* Adds a gap between images */
+        }
+
+        .projects img {
+            width: 100%; /* Makes the image fill its grid cell */
+            height: 350px; /* Maintains the image aspect ratio */
+            border-radius:10px;
+        }
+    </style>
+    <div class="projects">
+        <img src="assets/robot.png">
+        <img src="assets/final_robot.jpg">
+        <img src="assets/robot_hardware.jpg">
+
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+

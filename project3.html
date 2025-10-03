@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="#" class="title">Christian Porras</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Experience</a></li>
+    </ul>
+</header>
+
+<section id="spacer">
+    <p>To improve the safety and efficiency of loading powder into additive manufacturing machines, I designed a custom fixture in Siemens NX that securely latches onto powder bottles, allowing them to be lifted and loaded using a mechanical hoist. I conducted static simulations of the fixture using Ntop to validate its structural integrity under load. The design was prototyped using SLA 3D printing and refined through multiple iterations to ensure proper fit and function. After successful testing with the additive manufacturing team and receiving final approval, I had the final design CNC machined for operational use.</p>
+    <br>
+</section>
+
+<!--Button to download resume-->
+<!--<a href="assets/resume.pdf" class="btn btn--download">Download <span class = "u-bolder">Resume</span></a>-->
+
+<section id="projects">
+    <h3><span style="color:cornflowerblue;">Powder bottle device</span></h3>
+    <style>
+        .projects  {
+            display: grid; /* The key property for grid layout */
+            grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+            gap: 10px; /* Adds a gap between images */
+        }
+
+        .projects img {
+            width: 100%; /* Makes the image fill its grid cell */
+            height: 350px; /* Maintains the image aspect ratio */
+            border-radius:10px;
+        }
+    </style>
+    <div class="projects">
+        <img src="assets/Proto%201%20.png">
+        <img src="assets/Proto%202.png">
+        <img src="assets/Powder holder.png">
+
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

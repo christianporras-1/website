@@ -33,14 +33,34 @@
     <a href="assets/resume.pdf" class="btn btn--download">Download <span class = "u-bolder">Resume</span></a>
 
     <section id="projects">
-        <h3><span style="color: cornflowerblue;">Projects</span></h3>
-        <div class="job">
-            <h4>Battle bot</h4>
-            <img src="assets/robot.png" width="350" height="300"> <img src="assets/robot_hardware.jpg" Width="350" Height="300"> <img src="assets/final_robot.jpg" Width="350" Height="300">
-            <p>In an interdisciplinary team, I led the mechanical design and fabrication of a Sumo robot chassis, engineered to withstand competitive impacts while securely housing critical components. My primary responsibility was to design the main chassis to protect all internal hardware, including the motors, power supply, and custom printed circuit board (PCB).
+        <h3><span style="color:cornflowerblue;">My Work</span></h3>
+        <style>
+            .projects  {
+                display: grid; /* The key property for grid layout */
+                grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+                gap: 10px; /* Adds a gap between images */
+            }
 
-                A key technical challenge was developing a robust mounting solution for the PCB. I designed a system that used a custom bracket and mounting points to ensure the board remained completely stable and secure under heavy impact, preventing any component wiggle or disconnection. The chassis was successfully 3D printed using PLA+, and it performed effectively throughout the competition. While the chassis provided excellent protection, post-competition analysis revealed material limitations. Future iterations would utilize a more resilient material like PETG or a different manufacturing process such as CNC machining to enhance structural integrity and durability. </p>
+            .projects img {
+                width: 100%; /* Makes the image fill its grid cell */
+                height: 350px; /* Maintains the image aspect ratio */
+                border-radius:10px;
+            }
+        </style>
+        <div class="projects">
+            <a href="project1.html">
+            <img src="assets/final_robot.jpg">
+            </a>
+            <a href = "Project2.html">
+            <img src="assets/Final dragster.png">
+            </a>
+            <a href="project3.html">
+            <img src="assets/Powder holder.png">
+            </a>
+
+
         </div>
+
 
     </section>
 
@@ -52,7 +72,7 @@
             <li> Relevant course work: Dynamics, Electromechanical systems, Engineering computations, Thermodynamics, Fluid Mechanics, Mechanical Design, System Dynamics, Mechanics of Materials, Materials and manufacturing processes, Statics, Intro to Thermal Fluid Science, Graphic and Design</li>
         </ul>
         <p><Strong>The University of Texas at El Paso</Strong></p>
-        <p> B.A. Criminal Justice | Expected Graduation: Dec 2026</p>
+        <p> B.A. Criminal Justice | Expected Graduation: Dec 2025</p>
         <ul>
             <li> Relevant course work: Intro to Criminal Justice, Cyber crime, Criminology, Applied research methods in CJ, Organized crime, White collar crime, Homicide, Criminal Procedure, Crime control and prevention, Police systems and Practices.</li>
         </ul>
@@ -98,6 +118,9 @@
     </section>
 
     <footer>
+        <p>Contact me</p>
+        <p>chris12429456@gmail.com</p>
+        <p>(915) 494-5145</p>
         <p>&copy; 2025 Christian Porras</p>
         <ul class="social-links">
             <li><a href="#https://www.linkedin.com/in/christian-porras1/">LinkedIn</a></li>
